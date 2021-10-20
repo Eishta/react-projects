@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+.birthday-reminder h3 {
+  font-family: "Niconne", cursive;
+  color: #c02f67;
+  font-weight: 400;
+}
+.birthday-reminder .article p {
+  margin-bottom: 0;
+  color: #c02f67;
+}
+.birthday-reminder button {
+  background-color: #f28ab2;
+  color: white;
+}
