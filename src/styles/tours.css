@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Niconne&display=swap");
+main {
+  background-color: thistle;
+}
+.tours .card img {
+  height: 20vw;
+  width: 100%;
+  object-fit: cover;
+}
+button {
+  background-color: thistle;
+  color: white;
+}
+.tours .card-title {
+  margin-right: 50px;
+  color: darkmagenta;
+}
+.tours .card-subtitle {
+  font-family: "Niconne", cursive;
+  font-size: 1rem;
+}

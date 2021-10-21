@@ -9,11 +9,7 @@ main {
   margin: auto 0;
   width: 90vw;
   max-width: 450px;
-  background-color: white;
   padding: 1rem 2rem;
-  justify-content: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-  border-radius: 0.25rem;
 }
 .container h3 {
   margin-bottom: 2rem;
@@ -54,7 +50,7 @@ main {
 /* Article styles end */
 
 /* Button styles start */
-.container button {
+.container .btn {
   cursor: pointer;
   width: 100%;
   border-color: transparent;
@@ -66,8 +62,71 @@ main {
   border-radius: 0.4rem;
   transition: all 0.3s ease-in-out;
 }
-.container button:hover {
+.container .btn:hover {
   transform: scale(1.01);
   box-shadow: 0 4px 10px rgba(242, 138, 178, 0.5);
 }
 /* Button styles end */
+
+/* Loading styles start*/
+
+.loading {
+}
+.loading h1 {
+  text-transform: capitalize;
+}
+/* Loading styles end */
+
+/* CardList styles start */
+.card-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* CardList styles end*/
+
+/* Card styles start */
+.card{
+  background-color: white;
+  border: 2rem;
+  margin: 1rem 0;
+  /* padding: 1rem 2rem; */
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+.card:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.card-padding{
+  padding: 1rem 2rem;
+}
+.card-content{
+  margin: 1rem 2rem
+}
+.card-img{
+  width: 100%;
+  object-fit: cover;
+  height: 20vw;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.card-info{
+  display: flex;
+  justify-content: space-between;
+}
+.card-title{
+  margin-right: 50px;
+}
+.card-subtitle{
+  font-weight: 400;
+  font-size: 12px;
+}
+.read-more{
+  background-color: transparent;
+  color: rgb(182, 100, 182);
+  border: transparent;
+  cursor: pointer;
+}
+/* Card styles end */

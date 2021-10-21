@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
+main{
+  background-color: #f28ab2;
+}
+.birthday-reminder.container{
+  background-color: white;
+  padding: 1rem 2rem;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 0.25rem;
+}
 .birthday-reminder h3 {
   font-family: "Niconne", cursive;
   color: #c02f67;
