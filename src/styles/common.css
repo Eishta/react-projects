@@ -4,11 +4,11 @@ main {
   align-items: center;
   min-height: 100vh;
 }
-.title{
+.title {
   text-transform: capitalize;
   text-align: center;
 }
-.underline{
+.underline {
   width: 6rem;
   height: 0.25rem;
   background-color: black;
@@ -145,3 +145,47 @@ main {
   cursor: pointer;
 }
 /* Card styles end */
+
+/* Accordian Styles Start */
+.accordian button.btn.acc-btn {
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: red;
+  cursor: pointer;
+  align-self: center;
+  min-width: 2rem;
+  margin: 0 0 0 1rem;
+}
+.accordian header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordian header h4 {
+  margin-bottom: 0;
+}
+.accordian p {
+  color: grey;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.accordian {
+  padding: 1rem 1.5rem;
+  border: 2px solid grey;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  
+}
+.accordian:hover{
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+}
+h3{
+  text-transform: capitalize;
+}
+/* Accordian Styles End */
