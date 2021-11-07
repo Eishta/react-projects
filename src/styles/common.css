@@ -4,7 +4,16 @@ main {
   align-items: center;
   min-height: 100vh;
 }
-
+.title{
+  text-transform: capitalize;
+  text-align: center;
+}
+.underline{
+  width: 6rem;
+  height: 0.25rem;
+  background-color: black;
+  margin: 0 auto;
+}
 .container {
   margin: auto 0;
   width: 90vw;
@@ -78,52 +87,58 @@ main {
 /* Loading styles end */
 
 /* CardList styles start */
-.card-list{
+.card-list {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 /* CardList styles end*/
-
+.card-list {
+  min-height: 100vh;
+  background-color: #d6cae2;
+  margin-top: 2em;
+  position: sticky;
+  top: 0px;
+}
 /* Card styles start */
-.card{
+.card {
   background-color: white;
   border: 2rem;
   margin: 1rem 0;
-  /* padding: 1rem 2rem; */
+  padding: 1rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s linear;
 }
-.card:hover{
+.card:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
-.card-padding{
+.card-padding {
   padding: 1rem 2rem;
 }
-.card-content{
-  margin: 1rem 2rem
+.card-content {
+  margin: 1rem 2rem;
 }
-.card-img{
+.card-img {
   width: 100%;
   object-fit: cover;
   height: 20vw;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
-.card-info{
+.card-info {
   display: flex;
   justify-content: space-between;
 }
-.card-title{
+.card-title {
   margin-right: 50px;
 }
-.card-subtitle{
+.card-subtitle {
   font-weight: 400;
   font-size: 12px;
 }
-.read-more{
+.read-more {
   background-color: transparent;
   color: rgb(182, 100, 182);
   border: transparent;

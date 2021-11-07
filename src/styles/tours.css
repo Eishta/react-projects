@@ -2,14 +2,27 @@
 main {
   background-color: thistle;
 }
+.tours .underline{
+ background-color: rgb(92, 69, 114);
+}
+.tours .title{
+  color: rgb(92, 69, 114);
+}
+.tours .card{
+  padding: 0;
+}
+/* .tours .card p{
+  padding-bottom: 2rem;
+} */
 .tours .card img {
   height: 20vw;
   width: 100%;
   object-fit: cover;
 }
-button {
+.tours .btn {
   background-color: thistle;
   color: white;
+  margin-bottom: 2rem;
 }
 .tours .card-title {
   margin-right: 50px;

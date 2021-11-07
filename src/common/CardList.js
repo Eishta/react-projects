@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Card from './Card';
 
-const CardList = ({cardList, buttonText, removeTours})=>{
+const CardList = ({ removeTour, cardList, buttonText }) => {
     return (
-        <div className='card-list'>
-            {cardList.map(card=> <Card card={card} buttonText={buttonText} removeTours={removeTours}/>)}
-        </div>
-    );
-}
+        <section>
 
-export default CardList;
+
+            <div className='title'>
+                <h1>our tours </h1>
+                <div className='underline'></div>
+            </div>
+            <div>
+                {cardList.map(item => <Card card={item} removeTour={removeTour} buttonText={buttonText}/>)}
+            </div>
+        </section>
+    )
+}
+export default memo(CardList);

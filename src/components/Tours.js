@@ -30,7 +30,21 @@ const Tours = () => {
     useEffect(() => {
         fetchTours();
     }, [])
-
+    if (tours.length === 0) {
+        return (
+            
+            <main>
+                <div className='container tours'>
+                <div className='title'>
+                    <h1> no tours left</h1>
+                    <button 
+                    className='btn'
+                    onClick={fetchTours}>refresh</button>
+                </div>
+                </div>
+            </main>
+        )
+    }
     return (
         <main>
             <div className='container tours'>
@@ -39,8 +53,9 @@ const Tours = () => {
                     <Loading /> :
                     <CardList
                         cardList={tours}
-                        removeTour={removeTour} 
-                        buttonText='not interested'/>}
+                        removeTour={removeTour}
+                        buttonText='not interested' />
+                }
             </div>
         </main>
     );
