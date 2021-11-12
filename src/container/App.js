@@ -4,6 +4,7 @@ import BirthdayReminder from '../components/BirthdayReminder';
 import Tours from '../components/Tours';
 import Reviews from '../components/Reviews/Reviews';
 import Questions from '../components/Questions/Questions';
+import Main from '../components/Menu/Main';
 function App() {
   // const routes = createRoutes();
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <BirthdayReminder /> */}
       {/* <Tours /> */}
       {/* <Reviews/> */}
-      <Questions />
+      {/* <Questions /> */}
+      <Main/>
       {/* {routes} */}
     </div>
   );
