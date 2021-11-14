@@ -5,7 +5,7 @@ import '../../styles/questions.css';
 const Questions = ()=> {
     const [questions, setQuestions] = useState(data);
     return (
-        <main>
+        <main className='questions'>
             <div className='container'>
                 <h3> questions and answers about login</h3>
                 <section className='info'>

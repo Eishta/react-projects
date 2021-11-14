@@ -33,8 +33,8 @@ const Tours = () => {
     if (tours.length === 0) {
         return (
             
-            <main>
-                <div className='container tours'>
+            <main className='tours'>
+                <div className='container'>
                 <div className='title'>
                     <h1> no tours left</h1>
                     <button 
@@ -46,8 +46,8 @@ const Tours = () => {
         )
     }
     return (
-        <main>
-            <div className='container tours'>
+        <main className='tours'>
+            <div className='container'>
 
                 {loading ?
                     <Loading /> :

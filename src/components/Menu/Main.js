@@ -22,8 +22,8 @@ const Main = () => {
     }, []);
 
     return (
-        <main>
-            <section className='menu section'>
+        <main className='menu'>
+            <section className='section'>
                 <div className='title'>
                     <h2>
                         our menu

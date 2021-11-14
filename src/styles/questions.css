@@ -1,7 +1,7 @@
-main{
+main.questions{
     background: rgb(127, 90, 161);
 }
-.container{
+.questions .container{
     width: 90vw;
     margin: 5rem auto;
     background: white;
@@ -14,7 +14,7 @@ main{
 }
 
 @media (max-width: 900px) {
-    .container{
+    .questions.container{
         grid-template-columns: 1fr;
     }
 }

@@ -12,8 +12,8 @@ const BirthdayReminder = () => {
         setPeople([]);
     }
     return (
-        <main>
-            <section className='container birthday-reminder'>
+        <main className='birthday-reminder'>
+            <section className='container'>
                 <h3>Birthday Reminder</h3>
                 <ArticleList listData={people} />
                 <Button onclick={clearAll} text='Clear All' />

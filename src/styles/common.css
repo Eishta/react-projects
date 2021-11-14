@@ -8,6 +8,16 @@ main {
   text-transform: capitalize;
   text-align: center;
 }
+
+.section-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+}
 .underline {
   width: 6rem;
   height: 0.25rem;

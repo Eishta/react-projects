@@ -1,16 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-let routes = [{ path: '', component: '' }]
+import routes from './data/routesData';
+import Home from './container/Home';
 
 const createRoutes = () => (
-    <Router>
-        {/* <Route exact path='/' component={Home}/> */}
-        {routes.map(route => <Route exact path={route.path} component={route.component} />)}
-        {/* <Route exact path="/sessionstate1" component={Template1}/>
-      <Route exact path="/sessionstate2" component={Template2}/>
-      <Route exact path="/sessionstate3" component={Template3}/> */}
-    </Router>
+  <Router>
+    <Route path='/' exact component={Home}/>
+    {routes.map(({ path, Component , exact}) => (
+      <Route
+        exact={exact}
+        path={path}
+        component={Component} />
+    ))}
+  </Router>
 );
 
 export default createRoutes;

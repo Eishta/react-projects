@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
-main{
+main.birthday-reminder{
   background-color: #f28ab2;
 }
-.birthday-reminder.container{
+.birthday-reminder .container{
   background-color: white;
   padding: 1rem 2rem;
   justify-content: center;
