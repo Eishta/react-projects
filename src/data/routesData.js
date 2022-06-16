@@ -6,7 +6,7 @@ const Main = React.lazy(() => import("../components/Menu/Main"));
 const BirthdayReminder = React.lazy(() => import("../components/BirthdayReminder"));
 const Reviews = React.lazy(() => import("../components/Reviews/Reviews"));
 const Tours = React.lazy(() => import("../components/Tours"));
-
+const TicTacToe = React.lazy(() => import("../components/ticTacToe/Game"));
 // routes object that helps to map differnt routes of projects in react router
 const routes = [
     {
@@ -34,7 +34,11 @@ const routes = [
         exact: false,
         Component: Tours
     },
-
+    {
+        path: '/ticTacToe',
+        exact: false,
+        Component: TicTacToe
+    },
 
 ]
 export default routes;
@@ -69,6 +73,12 @@ export const paths = [
         title: 'Tours',
         path: '/tours',
         image: './images/projects/tours.PNG',
+        git: 'https://www.github.com',
+    },
+    {
+        title: 'TicTacToe',
+        path: '/ticTacToe',
+        image: './images/projects/TicTacToe.PNG',
         git: 'https://www.github.com',
     },
 ]

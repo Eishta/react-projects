@@ -1,0 +1,57 @@
+:root{
+    --square-size: 100px;
+}
+
+.board{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,auto);
+    gap: 1px ;
+    justify-content: center;
+    align-content: center;
+}
+
+.sqaure{
+    height: var(--square-size);
+    width: var(--square-size);
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(var(--square-size) * 0.9);
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+.winning-box{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+}
+
+.winning-box.show{
+    display: flex;
+}
+.winning-text{
+    font-size: 5rem;
+    color: white;
+}
+.restart{
+    padding: 10px;
+    background-color:darkgoldenrod;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
